@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.carousel__inner').slick({
     arrows: false,
 	dots: true,
-	autoplay: false,
+	autoplay: true,
 	autoplaySpeed: 2000,
 	slidesPerRow: 1,
 	slidesToShow: 3,
