@@ -206,15 +206,24 @@ body {
 	padding-bottom: 100px;
 }
 
-.about__image {
+.about__image{
 	position: relative;
 }
 
 .about__image img {
-	transform: rotate(90deg);
-	height: 250px;
+	height: 500px;
 	position: absolute;
-	top: 150px;
+	top: 50px;
+
+	transition: all 0.8s;
+	opacity: 0;
+	transform: translate(0px, 200%);
+	
+}
+
+.about__image img.car--active {
+	opacity: 1;
+	transform: translate(0px, 0px);
 }
 
 .about__list {
@@ -418,7 +427,7 @@ footer {
 	}
 
 	.about__image img {
-		right: -100px;
+		right: -0px;
 	}
 }
 
@@ -444,5 +453,19 @@ footer {
 
 	.about__image img {
 		right: -100px;
+	}
+
+	@media all and (max-width: 375px){
+
+	.services__item-text {
+		width: 100%;
+	}
+
+	.services__item:hover {
+		margin-right: 0px;
+	}
+
+	.about__image img {
+		right: 0px;
 	}
 }
